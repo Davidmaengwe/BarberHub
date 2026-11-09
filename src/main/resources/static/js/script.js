@@ -8,7 +8,7 @@ const bookingForm = document.getElementById("bookingForm");
 const bookingMessage = document.getElementById("bookingMessage");
 
 // Connect to our Spring Boot backend
-const API_URL = "http://localhost:8080/api/bookings";
+const API_URL = "/api/bookings";
 
 
 // ===============================
