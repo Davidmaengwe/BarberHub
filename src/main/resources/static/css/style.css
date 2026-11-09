@@ -1,0 +1,396 @@
+
+/* =========================
+   GENERAL STYLING
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #080808;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+.nav-links .nav-button {
+    background-color: #d4af37;
+    color: #111111;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.nav-links .nav-button:hover {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    background:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.75),
+                    rgba(0, 0, 0, 0.75)
+            ),
+            url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1")
+            center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-content h1 {
+    font-size: 58px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #d4af37;
+}
+
+.hero-content p {
+    color: #dddddd;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #111111;
+    padding: 14px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   SECTION GENERAL STYLING
+========================= */
+
+section {
+    padding: 80px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 span {
+    color: #d4af37;
+}
+
+.section-heading p {
+    color: #aaaaaa;
+}
+
+/* =========================
+   SERVICES SECTION
+========================= */
+
+.services {
+    background-color: #151515;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background-color: #202020;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 8px;
+    border-bottom: 3px solid #d4af37;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    background-color: #292929;
+}
+
+.service-card h3 {
+    color: #d4af37;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #bbbbbb;
+    margin-bottom: 15px;
+}
+
+.service-card .price {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/* =========================
+   BARBERS SECTION
+========================= */
+
+.barbers-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.barber-card {
+    background-color: #202020;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.barber-card:hover {
+    transform: translateY(-8px);
+}
+
+.barber-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.barber-card h3 {
+    color: #d4af37;
+    margin-top: 15px;
+}
+
+.barber-card p {
+    color: #bbbbbb;
+    padding-bottom: 20px;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+    background-color: #151515;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-content p {
+    color: #cccccc;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+/* =========================
+   BOOKING SECTION
+========================= */
+
+.booking {
+    background-color: #111111;
+}
+
+.booking-form {
+    max-width: 650px;
+    margin: auto;
+    background-color: #202020;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    background-color: #111111;
+    color: #ffffff;
+    outline: none;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+    border-color: #d4af37;
+}
+
+.booking-form input::placeholder {
+    color: #999999;
+}
+
+.booking-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #d4af37;
+    color: #111111;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.booking-form button:hover {
+    background-color: #ffffff;
+}
+
+#bookingMessage {
+    text-align: center;
+    margin-top: 15px;
+    color: #d4af37;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #080808;
+    text-align: center;
+    padding: 25px;
+    color: #aaaaaa;
+}
+
+footer span {
+    color: #d4af37;
+}
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .services-container,
+    .barbers-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 60px 5%;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 60px 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .services-container,
+    .barbers-container {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-form {
+        padding: 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+}
